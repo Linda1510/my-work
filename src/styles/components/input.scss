@@ -1,0 +1,14 @@
+.input {
+  padding: 1rem 1rem;
+  border: 1px solid black;
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  @media (min-width: $media-md) {
+    width: 15rem;
+  }
+
+  &--rounded {
+    border-radius: 0.5rem;
+  }
+}

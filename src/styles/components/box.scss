@@ -5,9 +5,14 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 250ms ease;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: $media-md) {
+      flex-direction: row;
+    }
   }
   &--translate {
     &:hover {
