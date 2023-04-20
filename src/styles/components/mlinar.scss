@@ -1,0 +1,16 @@
+.container {
+  &--black {
+    background-color: black;
+    color: white;
+  }
+  &__title {
+    color: #f9b601;
+  }
+  &__logo {
+    width: 6.87rem;
+    height: 1.62rem;
+    &__nav {
+      color: white;
+    }
+  }
+}

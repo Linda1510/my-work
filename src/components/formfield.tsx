@@ -1,4 +1,4 @@
-const formfield = () => {
+const Formfield = () => {
   return (
     <div>
       <form>
@@ -11,4 +11,4 @@ const formfield = () => {
     </div>
   );
 };
-export default formfield;
+export default Formfield;

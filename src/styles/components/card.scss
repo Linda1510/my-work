@@ -1,5 +1,17 @@
 .card {
   border: solid black;
   border-radius: 1rem;
-  background-color: rgb(182, 192, 192);
+  &2 {
+    &__tag {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 4rem;
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
