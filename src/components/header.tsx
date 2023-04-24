@@ -25,6 +25,9 @@ const Header = () => {
           <a className="header__nav__item " href="/varijable">
             Varijable
           </a>
+          <a className="header__nav__item " href="/petlje">
+            Petlje
+          </a>
         </nav>
         <div>IS</div>
       </div>
