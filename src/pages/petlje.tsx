@@ -29,7 +29,7 @@ const Petlje = () => {
     const pi: number = 3.14;
     const opseg = pi * inputValue * 2;
     console.log(opseg);
-    //do zadanog broja ispistai u stringu
+    //do zadanog broja ispisati u stringu
   };
   return (
     <div className="container">
