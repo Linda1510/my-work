@@ -133,6 +133,7 @@ const Vjezba2804 = () => {
       favoriteColor: "red",
     },
   ];
+
   //zadatak1
   let najmladaOsoba = frontendRazred[0].age;
   for (let i = 0; i < frontendRazred.length; i++) {
@@ -148,6 +149,7 @@ function slovoM{
 }
   return (
     <div className="container">
+      <div>test</div>
       <h1>Vjezba 2804</h1>
       <hr />
       <div>
