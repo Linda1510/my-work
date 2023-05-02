@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: aquamarine;
+  font-family: "Fasthand", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: beige;
+}
+.header__logo {
+  width: 5rem;
+}
+.header__nav {
+  margin-right: 2rem;
+  display: flex;
+}
+.header__nav__item {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+.header__nav__item:last-child {
+  margin-right: 0;
+}
+.header__nav__item:hover::after {
+  width: 100%;
+}
+.header__nav__item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all 250ms ease;
+}
+.header__actions {
+  align-items: center;
+  display: none;
+}
+@media (min-width: 48em) {
+  .header__actions {
+    display: flex;
+  }
+}
+.header__inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.header__hamburger {
+  width: 2rem;
+  display: block;
+}
+@media (min-width: 48em) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: auto;
+  padding: 0 2rem;
+}
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+@media (min-width: 48em) {
+  .container__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 62em) {
+  .container__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes heart-left {
+  0% {
+    background-color: rgb(46, 240, 55);
+    transform: skew(30deg);
+  }
+  100% {
+    background-color: rgb(220, 20, 160);
+    transform: skew(55deg);
+  }
+}
+.btn {
+  font-size: 1.5rem;
+  background-color: rgb(238, 29, 29);
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  .btn {
+    width: 15rem;
+  }
+}
+.btn__heart {
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+.btn--animate:active {
+  animation: heart-left 1.5s infinite;
+}
+
+.text {
+  text-align: center;
+}
+
+.paggination__image {
+  width: 1rem;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: green;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+.box__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 48em) {
+  .box__wrapper {
+    flex-direction: row;
+  }
+}
+.box--translate:hover {
+  transform: translate3d(50px, 0, 0);
+}
+.box--rotate:hover {
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+.box--scale:hover {
+  transform: scale(2, 0.5);
+}
+.box--scale:active {
+  transform: scale(0.8);
+}
+.box--skew:hover {
+  transform: skew(30deg);
+}
+
+.flex {
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+.flex--example {
+  display: flex;
+  justify-content: space-between;
+}
+.flex__left {
+  display: flex;
+}
+
+.input {
+  padding: 1rem 1rem;
+  border: 1px solid black;
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  .input {
+    width: 15rem;
+  }
+}
+.input--rounded {
+  border-radius: 0.5rem;
+}
+
+.card {
+  border: solid black;
+  border-radius: 1rem;
+}
+.card2__tag {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translate3d(0, -10rem, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.ispit {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-right: 25rem;
+  padding: 8rem;
+}
+.ispit__card {
+  width: 7rem;
+  height: 7rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.ispit__card--black {
+  background-color: black;
+  animation: slide-down 2s ease forwards;
+}
+.ispit__card--red {
+  background-color: red;
+  animation: slide-down 3s ease 1s forwards;
+}
+.ispit__card--orange {
+  background-color: orange;
+  animation: slide-down 4s ease 2s forwards;
+}
+
+.container--black {
+  background-color: black;
+  color: white;
+}
+.container__title {
+  color: #f9b601;
+}
+.container__logo {
+  width: 6.87rem;
+  height: 1.62rem;
+}
+.container__logo__nav {
+  color: white;
+}
+
+.fruit {
+  width: 20rem;
+  height: 10rem;
+  border: 1px solid black;
+}/*# sourceMappingURL=styles.css.map */

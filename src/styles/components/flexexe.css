@@ -1,0 +1,11 @@
+.flex {
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+.flex--example {
+  display: flex;
+  justify-content: space-between;
+}
+.flex__left {
+  display: flex;
+}/*# sourceMappingURL=flexexe.css.map */

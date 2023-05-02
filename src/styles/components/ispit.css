@@ -1,0 +1,36 @@
+@keyframes slide-down {
+  from {
+    transform: translate3d(0, -10rem, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.ispit {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-right: 25rem;
+  padding: 8rem;
+}
+.ispit__card {
+  width: 7rem;
+  height: 7rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.ispit__card--black {
+  background-color: black;
+  animation: slide-down 2s ease forwards;
+}
+.ispit__card--red {
+  background-color: red;
+  animation: slide-down 3s ease 1s forwards;
+}
+.ispit__card--orange {
+  background-color: orange;
+  animation: slide-down 4s ease 2s forwards;
+}/*# sourceMappingURL=ispit.css.map */
