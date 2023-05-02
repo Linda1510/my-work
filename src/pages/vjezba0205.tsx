@@ -27,7 +27,7 @@ console.log(myName.length);
   for ( let i = 0; i < numberList.length; i++);
   console.log(numberList);
   
-  
+//zadatak4
   
 
 
