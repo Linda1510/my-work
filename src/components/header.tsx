@@ -43,6 +43,9 @@ const Header = () => {
           <a className="header__nav__item " href="/breweries">
             Breweries
           </a>
+          <a className="header__nav__item " href="/pokemon">
+            Pokemon
+          </a>
         </nav>
         <div>IS</div>
       </div>
