@@ -65,14 +65,13 @@ const Europe = () => {
                     return (
                       <div>
                   {Object.keys(europe.currency).map((currency) => {
-                        {europe.[currency].name},{" "}
-                  {Object.keys(europe.currency).map((currency) => {
-                    {countries.[currency].symbol}
+                        {europe.currency[currency].name},
+                        {europe.[currency].symbol}
                       </div>
                     );
                   })}
                 </td>
-                <td>{countries.capital}</td>
+                <td>{europe.capital}</td>
               </tr>
             );
           })}
