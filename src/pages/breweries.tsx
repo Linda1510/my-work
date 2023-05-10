@@ -20,7 +20,7 @@ const Breweries = () => {
       .then((jsonData) => {
         setData(jsonData);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => console.log(error));
   }
   const getBreweryByCity = (city: string, perPage: number) => {
     fetch(

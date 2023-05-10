@@ -35,12 +35,12 @@ const Pokemon = () => {
       .catch((err) => console.log(err));
   };
   const getCapitalCity = () => {
-    fetch("https://restcountries.com/v3.1/capital/zagreb")
+    fetch("https://restcountries.com/v3.1/capital/italy")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data[0].flags.png);
+        console.log(data[0].flag.png);
         setFlag(data[0].flag.png);
       })
       .catch((err) => console.log(err));
@@ -70,7 +70,7 @@ const Pokemon = () => {
       </div>
       <div>
         <h1>Flag</h1>
-        <img src="" alt="" />
+        <img src={flag} alt="flag" />
       </div>
     </div>
   );
