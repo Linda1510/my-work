@@ -49,6 +49,9 @@ const Header = () => {
           <a className="header__nav__item " href="/europe">
             Europe
           </a>
+          <a className="header__nav__item " href="/africa">
+            Africa
+          </a>
         </nav>
         <div>IS</div>
       </div>

@@ -3,7 +3,7 @@ type EuropeDataType = {
   name: EuropeNameType;
   capital: string;
   flags: EuropeFlags;
-  currency:EuropCurrency;
+  currencies: EuropCurrency;
 };
 
 type EuropeNameType = {
@@ -12,13 +12,12 @@ type EuropeNameType = {
 type EuropeFlags = {
   png: string;
 };
-type EuropCurrency={
-  [currency:string] : {
-    name:string;
-    symbol:string
-
-  }
-}
+type EuropCurrency = {
+  [currency: string]: {
+    name: string;
+    symbol: string;
+  };
+};
 const Europe = () => {
   const [europeData, setEuropeData] = useState<EuropeDataType[]>([]);
 
@@ -61,21 +60,16 @@ const Europe = () => {
                     <img src={europe.flags.png} alt="flag" />
                   </td>
                   <td>
-                  {Object.keys(europe.currency).map((currency) => {
-                    return (
-                      <div>
-                  {Object.keys(europe.currency).map((currency) => {
-                        {europe.currency[currency].name},
-                        {europe.[currency].symbol}
-                      </div>
-                    );
-                  })}
-                </td>
-                <td>{europe.capital}</td>
-              </tr>
-            );
-          })}
+                    {Object.keys(europe.currencies).map((currency) => {
+                      return (
+                        <div>
+                          {europe.currencies[currency].name},
+                          {europe.currencies[currency].symbol}
+                        </div>
+                      );
+                    })}
                   </td>
+                  <td>{europe.capital}</td>
                 </tr>
               );
             })}
