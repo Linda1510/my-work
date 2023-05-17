@@ -45,12 +45,12 @@ const Vjezba1505 = () => {
 
   //6. Funkcija koja pretvara celsius to fahrenheit
   //formula =>  °C * 1.8 + 32 = °F
-  const celsiusToFahrenheit = (celsius: string) => {
+  const celsiusToFahrenheit = (celsius: number) => {
     return celsius * (1.8 + 32);
   };
 
   //7. Funkcija koja ispisuje string naopako
-  const reverseString = (str: boolean) => {
+  const reverseString = (str: string) => {
     let reversedStr = "";
     for (let i = str.length - 1; i > 0; i--) {
       reversedStr += str[i - 1];
