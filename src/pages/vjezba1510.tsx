@@ -50,7 +50,7 @@ const Vjezba1505 = () => {
   };
 
   //7. Funkcija koja ispisuje string naopako
-  const reverseString = (str: any) => {
+  const reverseString = (str: boolean) => {
     let reversedStr = "";
     for (let i = str.length - 1; i > 0; i--) {
       reversedStr += str[i - 1];
