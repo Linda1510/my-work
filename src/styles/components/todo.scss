@@ -1,0 +1,25 @@
+.container {
+  width: 500px;
+  background: rgb(247, 168, 161);
+  border-radius: 3px;
+  font-size: medium;
+
+  &__item {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 3px solid black;
+  }
+}
+.todo {
+  justify-content: space-between;
+  &__photo {
+    width: 1.5rem;
+    margin-left: 13rem;
+  }
+  &__btn {
+    background-color: rgb(163, 166, 182);
+    height: 20px;
+    width: 5rem;
+  }
+}
