@@ -15,7 +15,7 @@ import Vjezba0205 from "./pages/vjezba0205";
 import Vjezba0305 from "./pages/vjezba0305";
 import Breweries from "./pages/breweries";
 import Pokemon from "./pages/pokemon";
-import Europ from "./pages/europe";
+
 import Europe from "./pages/europe";
 import Africa from "./pages/africa";
 import Vjezba1505 from "./pages/vjezba1510";
