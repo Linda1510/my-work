@@ -58,6 +58,9 @@ const Header = () => {
           <a className="header__nav__item " href="/todo">
             Todo
           </a>
+          <a className="header__nav__item " href="/ispitjava">
+            Parcijalni ispit java
+          </a>
         </nav>
         <div>IS</div>
       </div>
