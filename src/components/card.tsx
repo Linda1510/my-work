@@ -11,7 +11,7 @@ const Card = () => {
         />
       </div>
 
-      <h1 className="card__title">Naslov</h1>
+      <h1 className="card__title">Naslovvvv</h1>
 
       <p className="card__desc">
         Lorem Ipsum has been the industry's standard dummy text ever since the
