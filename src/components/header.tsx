@@ -47,7 +47,7 @@ const Header = () => {
             Pokemon
           </a>
           <a className="header__nav__item " href="/europe">
-            Europe
+            Europeeeee
           </a>
           <a className="header__nav__item " href="/africa">
             Africa
