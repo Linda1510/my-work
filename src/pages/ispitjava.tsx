@@ -8,7 +8,7 @@ type IspitJavaType = {
 const Ispitjava = () => {
   const [ispitData, setIspitData] = useState<IspitJavaType[]>([]);
   const [inputValue, setInputValue] = useState<string>("");
-  const test = 3;
+
   const getIspitJava = (inputValue: string) => {
     fetch(`https://itunes.apple.com/search?term=${inputValue}&entity=song`)
       .then((response) => {
