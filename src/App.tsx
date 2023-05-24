@@ -21,6 +21,7 @@ import Africa from "./pages/africa";
 import Vjezba1505 from "./pages/vjezba1510";
 import Todo from "./pages/todo";
 import Ispitjava from "./pages/ispitjava";
+import Ufc from "./pages/ufc";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -90,6 +91,10 @@ const App = () => {
     {
       path: "/ispitjava",
       element: <Ispitjava />,
+    },
+    {
+      path: "/ufc",
+      element: <Ufc />,
     },
   ]);
   return (

@@ -61,8 +61,10 @@ const Header = () => {
           <a className="header__nav__item " href="/ispitjava">
             Parcijalni ispit javaa
           </a>
+          <a className="header__nav__item " href="/ufc">
+            UFC
+          </a>
         </nav>
-        <div>IS</div>
       </div>
       <div className="header__hamburger">
         <img src={hamburger} alt="hamburger" />
