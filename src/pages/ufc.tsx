@@ -1,6 +1,15 @@
 import ufclogo from "./../assets/ufclogo.jpg";
 import hollyholm from "./../assets/hollyholm.png";
 import mayrabuenosilva from "./../assets/mayrabuenosilva.png";
+import { useState } from "react";
+import { UfcPodaci, UfcType } from "../ufcPodaci";
+const [winerFighter, setWinerFighter]=
+useState<UfcType |null>(null)
+const getWinerFighter = (id)=>{
+  
+    }
+
+
 const Ufc = () => {
   return (
     <div className="ufc">
@@ -12,17 +21,20 @@ const Ufc = () => {
         </div>
         <div></div>
       </header>
-      <div className="ufc__players ufc--black">
+      <h3>July 16, 2023</h3>
+      <h3>UFC Fight Night: Holm vs. Silva</h3>
+      <div 
+  {UfcPodaci.map((ufcPodaci) => {
+    return <div onClick={() => getWinerFighter(UfcPodaci.id)} className="card"></div>;
+  })}
+      className="ufc__players ufc--black">
         <div>
-          <h3>July 16, 2023</h3>
-          <h3>UFC Fight Night: Holm vs. Silva</h3>
+          
           <img src={hollyholm} alt="holly" />
           <button>win</button>
           <h3>rank</h3>
         </div>
         <div>
-          <h3>July 16, 2023</h3>
-          <h3>UFC Fight Night: Holm vs. Silva</h3>
           <img src={mayrabuenosilva} alt="holly" />
           <button>win</button>
           <h3>rank</h3>

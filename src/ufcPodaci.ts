@@ -12,7 +12,7 @@ export type UfcType = {
   event: string;
 };
 
-export const UfcPodaciData = [
+export const UfcPodaci = [
   {
     id: 1,
     name: "Holly",
