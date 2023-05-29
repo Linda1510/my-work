@@ -1,16 +1,46 @@
 import ufclogo from "./../assets/ufclogo.jpg";
 import hollyholm from "./../assets/hollyholm.png";
 import mayrabuenosilva from "./../assets/mayrabuenosilva.png";
+import { FighterType, ufcData, ufcFightsData } from "../ufcPodaci";
 import { useState } from "react";
-import { UfcPodaci, UfcType } from "../ufcPodaci";
-const [winerFighter, setWinerFighter]=
-useState<UfcType |null>(null)
-const getWinerFighter = (id)=>{
-  
-    }
+
+
 
 
 const Ufc = () => {
+  const [winnerFighter, setWinnerFighter] = useState<FighterType | null>(null);
+
+  const getWinnerFighter = (id: number) => {};
+
+  const renderFighter = (fighterId: number) => {
+    let fighter: FighterType | null = null;
+
+    ufcData.forEach((currentFighter) => {
+      if (currentFighter.id === fighterId) {
+        fighter = currentFighter;
+      }
+    });
+
+    if (fighter) {
+      const data = fighter as FighterType;
+      return (
+        <>
+          <img
+            className="ufc__fighter__img"
+            src={data.img}
+            alt={data.name + " " + data.lastName}
+          />
+          <div className="ufc__fighter__name">
+            {data.name + " " + data.lastName}
+          </div>
+          <div className="ufc__fighter__nickname">{data.nickname}</div>
+        </>
+      );
+    } else {
+      return "Didn't found fighter with that ID";
+    }
+  };
+
   return (
     <div className="ufc">
       <header className="ufc__header">
@@ -23,22 +53,17 @@ const Ufc = () => {
       </header>
       <h3>July 16, 2023</h3>
       <h3>UFC Fight Night: Holm vs. Silva</h3>
-      <div 
-  {UfcPodaci.map((ufcPodaci) => {
-    return <div onClick={() => getWinerFighter(UfcPodaci.id)} className="card"></div>;
-  })}
-      className="ufc__players ufc--black">
-        <div>
-          
-          <img src={hollyholm} alt="holly" />
-          <button>win</button>
-          <h3>rank</h3>
-        </div>
-        <div>
-          <img src={mayrabuenosilva} alt="holly" />
-          <button>win</button>
-          <h3>rank</h3>
-        </div>
+
+      <div className="ufc__matches">
+        {ufcFightsData.map((fight, index) => {
+          return (
+            <div className="ufc__fight" key={index}>
+              <div className="ufc__fighter">{renderFighter(fight.blue)}</div>
+              <div className="ufc__vs">VS</div>
+              <div className="ufc__fighter">{renderFighter(fight.red)}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
