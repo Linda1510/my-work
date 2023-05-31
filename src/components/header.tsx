@@ -64,6 +64,9 @@ const Header = () => {
           <a className="header__nav__item " href="/ufc">
             UFC
           </a>
+          <a className="header__nav__item " href="/bootstrap">
+            Bootstrap
+          </a>
         </nav>
       </div>
       <div className="header__hamburger">

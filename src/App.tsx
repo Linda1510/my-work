@@ -22,6 +22,7 @@ import Vjezba1505 from "./pages/vjezba1510";
 import Todo from "./pages/todo";
 import Ispitjava from "./pages/ispitjava";
 import Ufc from "./pages/ufc";
+import Bootstrap from "./pages/bootstrap";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -95,6 +96,10 @@ const App = () => {
     {
       path: "/ufc",
       element: <Ufc />,
+    },
+    {
+      path: "/bootstrap",
+      element: <Bootstrap />,
     },
   ]);
   return (
